@@ -1,0 +1,90 @@
+#home {
+	background: url('../img/bg2.jpg') no-repeat center center;
+	background-size: cover;
+}
+#portfolio {
+	background: url('../img/bg1.jpg') no-repeat center center;
+	background-size: cover;	
+}
+#work {
+	background: url('../img/bg3.jpg') no-repeat center center;
+	background-size: cover;	
+}
+#contact {
+	background: url('../img/bg4.jpg') no-repeat center center;
+	background-size: cover;	
+}
+.carousel-caption {
+	color: #111;
+	background-color: #EEE;
+}
+.item {
+	background-color: #EEE;
+}
+.jumbotron h6 {
+	color: #222;
+}
+.tiles h3 {
+	margin-top: 76px;
+	text-align: center;
+}
+.about {
+	background: url('../img/svg/rocket.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 64px 64px;
+	display: block;	
+}
+.contact {
+	background: url('../img/svg/openletter.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 64px 64px;
+	display: block;	
+}
+.work {
+	background: url('../img/svg/store.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 64px 64px;
+	display: block;	
+}
+.tiles span {
+	color: #D35400;
+	display: inline-block;
+	font-size: 40px;
+	margin: 0 0 6px;
+	width: 56px;
+}
+.tiles p {
+	text-align: center;
+}
+.btn-primary {
+	background-color: #16A085;
+}
+#mywork span {
+	color: #D35400;
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 0 0 6px;
+	width: 100px;
+}
+#mywork span::after {
+   content: " Details ";
+}
+.modal-body {
+	padding-bottom: 2px;
+}
+.modal-body ul {
+	list-style: none;
+}
+.modal-body li {
+	font-size: 16px;
+}
+.modal-footer {
+	margin-top:2px;
+  	padding:9px 10px 10px;
+}
+/*.navbar {
+	margin-top: 32px;
+}*/
