@@ -22,6 +22,8 @@
 
 <div class="container">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
 	
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -32,8 +34,15 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'jontyjago' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	<div class="entry-footer portfolio-meta">
+		<div class="row">
+			<?php $work_done = get_post_meta(get_the_id(), 'work_done', true);
+			$site_link = get_post_meta(get_the_id(), 'site_link', true);
+			
+			echo "<p class='text-center small'>" . get_the_term_list( $post->ID, 'jj_technology', 'Technologies Used: ', ', ', '' ) . "</p>";
+			echo "<p class='text-center small'>Work Completed: " . $work_done . "</p>";
+			echo "<p class='text-center small  bottom-meta'><a href='" . $site_link . "' target='_blank'>Site Link</a></p>"; ?>
+		</div><!-- end row -->
+	</div><!-- .entry-footer -->
 </article><!-- #post-## -->
 </div><!-- end container -->

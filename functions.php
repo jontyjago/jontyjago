@@ -13,6 +13,7 @@ add_theme_support( 'post-thumbnails' );
 require_once( 'library/post-types.php' );
 require_once( 'library/metaboxes.php' );
 require_once( 'library/taxonomies.php' );
+require_once( 'library/options.php' );
 //enable excerpts for pages
 //remember to enable in Screen Options
 // add_action('init', 'enable_page_excerpts');

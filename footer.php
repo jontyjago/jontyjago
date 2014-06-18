@@ -8,17 +8,26 @@
  */
 ?>
 
-<div class="container">    
-<hr>
-  	<div class="row">
-    	<div class="col-lg-12">
-      		<div class="col-md-6 col-md-offset-6">
-            <p class="muted pull-right"><small>Built with <a href="http://wordpress.org">Wordpress</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://twittem.github.io/wp-bootstrap-navwalker/">Navwalker</a> &amp; <a href="http://underscores.me/">_s</a></small></p>
-      		  <p class="muted pull-right"><small>Designed and built by <a href='http://www.jontyjago.com'>Jonathan Evans</a>. &copy; 2014</small></p>
-          </div><!-- end col4 -->
-    	</div><!-- end col12 -->
-  	</div><!-- end row -->
-</div><!-- end container -->
+<footer>
+
+    <div class="container">
+        <div class="row">
+        <br />
+            <div class="col-md-4 col-md-offset-4 footer-img">
+              <center>      
+                  <!-- <img src="img/svg/eye.svg" class="img-circle" alt="..."> -->
+                  <br>
+                  <h4 class="footertext">jontyjago.com</h4>
+                  <p class="footertext">Built with <a href="http://wordpress.org">Wordpress</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://twittem.github.io/wp-bootstrap-navwalker/">Navwalker</a> &amp; <a href="http://underscores.me/">_s</a><br>
+              </center>
+              </div><!-- end col -->
+        </div><!-- end row -->
+            <div class="row">
+            <p><center><p class="footertext">Jonathan Evans &copy;2014</p></center></p>
+        </div>
+    </div>
+
+</footer>
     
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -33,8 +33,10 @@ function portfolio_custom_box( $post ) {
 	// The actual fields for data entry
 	// Use get_post_meta to retrieve an existing value from the database and use the value for the form
 ?>
-	<label for="work_done">Date Work Done:</label>
+	<label for="work_done">Date Work Completed:</label>
 	<input type="text" id="work_done" name="work_done" size=20 value="<?php echo esc_attr( get_post_meta( get_the_id(), 'work_done', true ) ); ?>"><br />
+	<label for="site_link">Site Link:</label>
+	<input type="text" id="site_link" name="site_link" size=20 value="<?php echo esc_attr( get_post_meta( get_the_id(), 'site_link', true ) ); ?>"><br />
 	<label for="sort_order">Sort Order:</label>
 	<input type="text" id="sort_order" name="sort_order" size=8 value="<?php echo esc_attr( get_post_meta( get_the_id(), 'sort_order', true ) ); ?>"><br />
 	<label for="header_text_1">Header 1:</label>
@@ -65,6 +67,10 @@ function save_portfolio_item_data( $post_id ) {
 	$work_done = sanitize_text_field( $_POST['work_done'] );
 	add_post_meta( $post_ID, 'work_done', $work_done, true ) or
 		update_post_meta( $post_id, 'work_done', $work_done );
+	// site link
+	$site_link = sanitize_text_field( $_POST['site_link'] );
+	add_post_meta( $post_ID, 'site_link', $site_link, true ) or
+		update_post_meta( $post_id, 'site_link', $site_link );
 	// sort order
 	$sort_order = sanitize_text_field( $_POST['sort_order'] );
 	add_post_meta( $post_ID, 'sort_order', $sort_order, true ) or

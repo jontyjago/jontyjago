@@ -4,7 +4,7 @@ Theme URI: http://jontyjago.com/portfolio
 Author: Jonathan Evans
 Author URI: http://www.jontyjago.com/
 Description: Custom theme built for jontyjago.com. Based on Bootstrap.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: jontyjago
@@ -22,7 +22,8 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 /*---------------
-1.0 
+1.0 Initial Version
+1.1 Added more Options for homepage text, 404, technology archive page, displayed metadata on portfolio pages
 
 /*Before we start, import the custom css files*/
 

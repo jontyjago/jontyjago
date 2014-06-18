@@ -14,6 +14,18 @@
 	background: url('../img/bg4.jpg') no-repeat center center;
 	background-size: cover;	
 }
+#technology {
+	background: url('../img/bg6.jpg') no-repeat center center;
+	background-size: cover;	
+}
+#not-found {
+	background: url('../img/bg7.jpg') no-repeat center center;
+	background-size: cover;		
+}
+footer {
+	background: url('../img/bg5.jpg') no-repeat center center;
+	background-size: cover;	
+}
 .carousel-caption {
 	color: #111;
 	background-color: #EEE;
@@ -47,6 +59,13 @@
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 64px 64px;
+	display: block;	
+}
+.footer-img {
+	background: url('../img/svg/eye.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
 	display: block;	
 }
 .tiles span {
@@ -85,6 +104,25 @@
 	margin-top:2px;
   	padding:9px 10px 10px;
 }
+a: visited {
+	color: #FFFFFF;
+}
 /*.navbar {
 	margin-top: 32px;
 }*/
+.portfolio-meta {
+	border-top: 1px dotted #16A085;
+	padding-top: 0.25em
+}
+.portfolio-meta p {
+	margin-bottom: 0.3em;
+}
+.bottom-meta {
+	border-bottom: 1px dotted #16A085;
+}
+.footertext {
+	color: #EEEEEE;
+}
+footer {
+	margin-top: 32px;
+}

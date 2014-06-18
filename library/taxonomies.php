@@ -18,8 +18,9 @@ function jj_technology() {
 		'menu_name'         => __( 'Technologies' ),
 	);
 	$args = array(
-		'labels' => $labels,
-		'hierarchical' => true,
+		'labels' 		=> $labels,
+		'hierarchical' 	=> true,
+		'rewrite'        => array( 'slug' => 'technology' ),
 	);
 	register_taxonomy( 'jj_technology', 'portfolio', $args );
 }
