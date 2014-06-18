@@ -33,7 +33,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src= <?php echo base_url() . "js/bootstrap.min.js"?> ></script>
+<script src= <?php echo get_template_directory_uri() . "/js/bootstrap.min.js"?> ></script>
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
