@@ -34,19 +34,19 @@ get_header(); ?>
 
         <div class="container">
             <div class="tiles row">
+                <div class="col-sm-4 work">
+                    <h3><?php echo stripslashes(get_option('home-title-2')); ?></h3>
+                    <p><?php echo stripslashes(get_option('home-text-2')); ?></p>
+                    <p><a class="btn btn-info btn-wide" href="portfolio">Portfolio &raquo;</a></p>
+                </div><!-- end col4 -->
                 <div class="col-sm-4 about">
                     <h3><?php echo stripslashes(get_option('home-title-1')); ?></h3>
                         <p><?php echo stripslashes(get_option('home-text-1')); ?></p>
                 </div><!-- end col4 -->
-                <div class="col-sm-4 work">
-                    <h3><?php echo stripslashes(get_option('home-title-2')); ?></h3>
-                    <p><?php echo stripslashes(get_option('home-text-2')); ?></p>
-                    <p><a class="btn btn-primary btn-wide" href="portfolio">See More &raquo;</a></p>
-                </div><!-- end col4 -->
                 <div class="col-sm-4 contact">
                     <h3><?php echo stripslashes(get_option('home-title-3')); ?></h3>
                     <p><?php echo stripslashes(get_option('home-text-3')); ?></p>
-                    <p><a class="btn btn-primary btn-wide" href="contact">Contact &raquo;</a></p>
+                    <p><a class="btn btn-warning btn-wide" href="contact">Contact &raquo;</a></p>
                 </div><!-- end col4 -->
             </div><!-- end row -->
         </div><!-- end container -->
