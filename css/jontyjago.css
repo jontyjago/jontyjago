@@ -1,30 +1,45 @@
-#home {
-	background: url('../img/bg2.jpg') no-repeat center center;
-	background-size: cover;
+#head-block {
+	color: #DDDEEE;
+	padding-bottom: 0px;
 }
-#portfolio {
+#home {
+	/*background: url('../img/bg2.jpg') no-repeat center center;*/
+	/*background-color: #3498DB;*/
+	/*background-color: #16A085;*/
+	background-size: cover;
+	color: #DDDEEE;
+/*	padding needed because no h1 in the jumbotron*/
+	padding: 78px 0 10px;	
+}
+/*#portfolio {
 	background: url('../img/bg1.jpg') no-repeat center center;
-	background-size: cover;	
+	background-size: cover;
+	color: #DDDEEE;
+	padding-bottom: 0px;
 }
 #work {
 	background: url('../img/bg3.jpg') no-repeat center center;
-	background-size: cover;	
+	background-size: cover;
+	color: #DDDEEE;
+	padding-bottom: 0px;
 }
 #contact {
 	background: url('../img/bg4.jpg') no-repeat center center;
 	background-size: cover;	
 }
 #technology {
-	background: url('../img/bg6.jpg') no-repeat center center;
+	background: url('../img/bg9.jpg') no-repeat center center;
 	background-size: cover;	
 }
 #not-found {
-	background: url('../img/bg7.jpg') no-repeat center center;
+	background: url('../img/bg8.jpg') no-repeat center center;
 	background-size: cover;		
-}
+}*/
 footer {
-	background: url('../img/bg5.jpg') no-repeat center center;
-	background-size: cover;	
+	margin-top: 32px;
+}
+.footer-text {
+	color: #FFF;
 }
 .carousel-caption {
 	color: #111;
@@ -36,38 +51,59 @@ footer {
 .jumbotron h6 {
 	color: #222;
 }
-.tiles h3 {
+.tiles h3,
+.about h3 {
 	margin-top: 76px;
 	text-align: center;
 }
 .about {
 	background: url('../img/svg/rocket.svg');
+	text-align: center;
 	background-position: center top;
 	background-repeat: no-repeat;
+	display: block;
 	background-size: 64px 64px;
-	display: block;	
+	margin-top: 2em;
 }
 .contact {
 	background: url('../img/svg/openletter.svg');
 	background-position: center top;
 	background-repeat: no-repeat;
+	display: block;
+	background-size: 64px 64px;	
+}
+.support {
+	background: url('../img/svg/umbrella.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	display: block;
 	background-size: 64px 64px;
-	display: block;	
 }
 .work {
 	background: url('../img/svg/store.svg');
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 64px 64px;
-	display: block;	
+	display: block;
+	background-size: 64px 64px;	
 }
 .footer-img {
 	background: url('../img/svg/eye.svg');
+	background-size: 32px 32px;
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 32px 32px;
-	display: block;	
+	display: block;
 }
+article,
+.tiles {
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 6px;
+}
+/*.contact,
+.support,
+.work {
+	border-bottom: 1px #D35400 dotted;
+}*/
 .tiles span {
 	color: #D35400;
 	display: inline-block;
@@ -119,10 +155,4 @@ a: visited {
 }
 .bottom-meta {
 	border-bottom: 1px dotted #16A085;
-}
-.footertext {
-	color: #EEEEEE;
-}
-footer {
-	margin-top: 32px;
 }

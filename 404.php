@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div class='jumbotron' id='not-found'>
+<div class='jumbotron' id='head-block'>
     <div class='container'>
         <h2>Page Not Found</h2>
         <h6>Hang on, I'll have another look.</h6>

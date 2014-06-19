@@ -8,16 +8,14 @@
  */
 ?>
 
-<footer>
+<footer class='palette-peter-river'>
 
     <div class="container">
         <div class="row">
         <br />
             <div class="col-md-4 col-md-offset-4 footer-img">
-              <center>      
-                  <!-- <img src="img/svg/eye.svg" class="img-circle" alt="..."> -->
-                  <br>
-                  <h4 class="footertext">jontyjago.com</h4>
+              <center>
+                  <br /><h4 class="footertext">jontyjago.com</h4>
                   <p class="footertext">Built with <a href="http://wordpress.org">Wordpress</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://twittem.github.io/wp-bootstrap-navwalker/">Navwalker</a> &amp; <a href="http://underscores.me/">_s</a><br>
               </center>
               </div><!-- end col -->

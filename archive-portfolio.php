@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="jumbotron" id='work'>
+<div class="jumbotron palette-belize-hole" id='head-block'>
 	<div class="container">
 	<?php
 		 $args = array(
@@ -21,11 +21,11 @@ get_header(); ?>
  		$query = new WP_Query($args);
 
 		if ( $query -> have_posts() ) : ?>
-			<h1>Sites I Have Built</h1>
-        	<h6>All websites look different.</h6>
-        	<h6>Yours probably won't look much like the ones below.</h6>
-        	<h6>For each of these sites I have worked with the client and built the site that they wanted.</h6>
-        	<h6>Not the site that somebody else told them they needed.</h6>
+			<h1><?php echo stripslashes(get_option('portfolio-title')); ?></h1>
+        	<p class='lead'><?php echo stripslashes(get_option('portfolio-header-1')); ?></p>
+            <p class='lead'><?php echo stripslashes(get_option('portfolio-header-2')); ?></p>
+            <p class='lead'><?php echo stripslashes(get_option('portfolio-header-3')); ?></p>
+            <p class='lead'><?php echo stripslashes(get_option('portfolio-header-4')); ?></p>
     </div><!-- end container -->
 </div><!-- end jumbotron -->
 <div class="container">

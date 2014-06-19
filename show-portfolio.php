@@ -10,12 +10,12 @@
 <?php $header_text_2 = get_post_meta(get_the_id(), 'header_text_2', true); ?>
 <?php $header_text_3 = get_post_meta(get_the_id(), 'header_text_3', true); ?>
 
-<div class='jumbotron' id='portfolio'>
+<div class='jumbotron palette-belize-hole' id='head-block'>
     <div class='container'>
         <h2><?php the_title(); ?></h2>
-        <h6><?php  echo $header_text_1; ?></h6>
-        <h6><?php  echo $header_text_2; ?></h6> 
-        <h6><?php  echo $header_text_3; ?></h6> 
+        <p class='lead'><?php  echo $header_text_1; ?></p>
+        <p class='lead'><?php  echo $header_text_2; ?></p> 
+        <p class='lead'><?php  echo $header_text_3; ?></p> 
     </div><!-- end container about -->
 </div><!-- end jumbotron -->
 
@@ -23,8 +23,6 @@
 <div class="container">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
-	
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

@@ -18,7 +18,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-main" data-offset="50" <?php body_class(); ?>>
+<body class='palette-silver' data-spy="scroll" data-target="#navbar-main" data-offset="50" <?php body_class(); ?>>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-    <a class="navbar-brand" href="http://www.jontyjago.com">jontyjago.com</a>
+    <a class="navbar-brand" href="<?php echo site_url(); ?>">Jonathan Evans</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

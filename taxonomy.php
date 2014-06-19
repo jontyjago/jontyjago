@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div class='jumbotron' id='technology'>
+	<div class='jumbotron palette-belize-hole' id='head-block'>
     	<div class='container'>
         	<h2><?php single_term_title(); ?></h2>
     	</div><!-- end container about -->
