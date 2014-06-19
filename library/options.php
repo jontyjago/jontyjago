@@ -39,15 +39,27 @@ function jj_options_page() {
         <p><input type="text" name="header-line-4" id="header-line-4" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'header-line-4' ) ) ); ?>"/> Header Line 4</p>
         
         <h3>Homepage Text</h3>
-        <p>Titles for the 3 boxes on the home page, should not be left blank.</p>
+        <p>Titles for the 4 boxes on the home page, should not be left blank.</p>
         <p><input type="text" name="home-title-1" id="home-title-1" size="28" value="<?php esc_attr_e( stripslashes( get_option( 'home-title-1' ) ) ); ?>"/> Homepage Box Title 1</p>
         <p><input type="text" name="home-title-2" id="home-title-2" size="28" value="<?php esc_attr_e( stripslashes( get_option( 'home-title-2' ) ) ); ?>"/> Homepage Box Title 2</p>
-        <p><input type="text" name="home-title-3" id="home-title-3" size="28" value="<?php esc_attr_e( stripslashes( get_option( 'home-title-3' ) ) ); ?>"/> Homepage Box Title 3</p>        
-        <p>Text for the 3 boxes on the home page, should not be left blank.</p>
-        <p><input type="text" name="home-text-1" id="home-text-1" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-1' ) ) ); ?>"/> Homepage Box Text 1</p>
-        <p><input type="text" name="home-text-2" id="home-text-2" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-2' ) ) ); ?>"/> Homepage Box Text 2</p>
-        <p><input type="text" name="home-text-3" id="home-text-3" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-3' ) ) ); ?>"/> Homepage Box Text 3</p>
+        <p><input type="text" name="home-title-3" id="home-title-3" size="28" value="<?php esc_attr_e( stripslashes( get_option( 'home-title-3' ) ) ); ?>"/> Homepage Box Title 3</p>
+        <p><input type="text" name="home-title-4" id="home-title-4" size="28" value="<?php esc_attr_e( stripslashes( get_option( 'home-title-4' ) ) ); ?>"/> Homepage Box Title 4</p>        
+        <p>Text for the 4 boxes on the home page, should not be left blank.</p>
+        <p><input type="text" name="home-text-1" id="home-text-1" size="98" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-1' ) ) ); ?>"/> Homepage Box Text 1</p>
+        <p><input type="text" name="home-text-2" id="home-text-2" size="98" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-2' ) ) ); ?>"/> Homepage Box Text 2</p>
+        <p><input type="text" name="home-text-3" id="home-text-3" size="98" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-3' ) ) ); ?>"/> Homepage Box Text 3</p>
+        <p><input type="text" name="home-text-4" id="home-text-4" size="98" value="<?php esc_attr_e( stripslashes( get_option( 'home-text-4' ) ) ); ?>"/> Homepage Box Text 4</p>        
         
+        <h3>Portfolio Page Title</h3>
+        <p>Title for portfolio page. Should not be left blank.</p>
+        <p><input type="text" name="portfolio-title" id="portfolio-title" size="30" value="<?php esc_attr_e( get_option( 'portfolio-title' ) ); ?>"/></p>
+        <h3>Portfolio Headers</h3>
+        <p>These lines will be shown in the header for the portfolio page. 1 or more lines can be left blank.</p>
+        <p><input type="text" name="portfolio-header-1" id="portfolio-header-1" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'portfolio-header-1' ) ) ); ?>"/> Portfolio Header 1</p>
+        <p><input type="text" name="portfolio-header-2" id="portfolio-header-2" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'portfolio-header-2' ) ) ); ?>"/> Portfolio Header 2</p>
+        <p><input type="text" name="portfolio-header-3" id="portfolio-header-3" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'portfolio-header-3' ) ) ); ?>"/> Portfolio Header 3</p>
+        <p><input type="text" name="portfolio-header-4" id="portfolio-header-4" size="48" value="<?php esc_attr_e( stripslashes( get_option( 'portfolio-header-4' ) ) ); ?>"/> Portfolio Header 4</p>
+ 
         <!-- submit button -->
         <p><input type="submit" name="search" value="Update Options" class="button" /></p>
     </form>
@@ -65,8 +77,14 @@ function jj_options_update() {
     update_option( 'home-title-1', $_POST['home-title-1'] );
     update_option( 'home-title-2', $_POST['home-title-2'] );
     update_option( 'home-title-3', $_POST['home-title-3'] );
+    update_option( 'home-title-4', $_POST['home-title-4'] );
     update_option( 'home-text-1', $_POST['home-text-1'] );
     update_option( 'home-text-2', $_POST['home-text-2'] );    
     update_option( 'home-text-3', $_POST['home-text-3'] );
-
+    update_option( 'home-text-4', $_POST['home-text-4'] );
+    update_option( 'portfolio-title', $_POST['portfolio-title'] );
+    update_option( 'portfolio-header-1', $_POST['portfolio-header-1'] );
+    update_option( 'portfolio-header-2', $_POST['portfolio-header-2'] );
+    update_option( 'portfolio-header-3', $_POST['portfolio-header-3'] );
+    update_option( 'portfolio-header-4', $_POST['portfolio-header-4'] );
 }
